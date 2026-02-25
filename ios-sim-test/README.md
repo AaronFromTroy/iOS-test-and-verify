@@ -30,7 +30,7 @@ It won't say it's done until it has actually looked at the running app and confi
 /plugins add https://github.com/AaronFromTroy/iOS-test-and-verify
 ```
 
-Run this inside Claude Code. The skill becomes available globally.
+Run this inside Claude Code. The skill becomes available globally as `/ios-sim-test:ios-sim-test`.
 
 ### Option 2: Install from a local directory
 
@@ -44,7 +44,7 @@ Run this inside Claude Code. The skill becomes available globally.
    {
      "skills": [
        {
-         "path": "/Users/yourname/skills/ios-sim-test/ios-sim-test"
+         "path": "/Users/yourname/skills/ios-sim-test/skills/ios-sim-test"
        }
      ]
    }
@@ -86,9 +86,14 @@ Claude will handle the rest — build, launch, navigate, screenshot, verify, and
 
 ```
 ios-sim-test/
-├── SKILL.md              # Skill definition and step-by-step instructions for Claude
-└── references/
-    └── navigation.md     # Gesture reference and device coordinate tables
+├── .claude-plugin/
+│   └── plugin.json             # Plugin manifest
+├── skills/
+│   └── ios-sim-test/
+│       ├── SKILL.md            # Skill definition and step-by-step instructions for Claude
+│       └── references/
+│           └── navigation.md   # Gesture reference and device coordinate tables
+└── README.md
 ```
 
 ---

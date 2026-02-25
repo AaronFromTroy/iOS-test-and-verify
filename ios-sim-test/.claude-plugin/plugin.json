@@ -1,0 +1,9 @@
+{
+  "name": "ios-sim-test",
+  "description": "Build, run, and visually verify your iOS app on the simulator",
+  "version": "1.0.0",
+  "author": {
+    "name": "AaronFromTroy"
+  },
+  "repository": "https://github.com/AaronFromTroy/iOS-test-and-verify"
+}
