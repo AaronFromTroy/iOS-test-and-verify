@@ -1,2 +1,5 @@
 # Packaged skill files (generated, not source)
 *.skill
+
+# Claude Code local session files
+.claude/

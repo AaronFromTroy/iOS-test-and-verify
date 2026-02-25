@@ -24,41 +24,42 @@ It won't say it's done until it has actually looked at the running app and confi
 
 ## How to install in Claude Code
 
-### Option 1: Install from a local directory
+### Option 1: Install via plugin command (recommended)
+
+```bash
+/plugins add https://github.com/AaronFromTroy/iOS-test-and-verify
+```
+
+Run this inside Claude Code. The skill becomes available globally.
+
+### Option 2: Install from a local directory
 
 1. Clone or download this repository somewhere on your machine:
    ```bash
-   git clone <repo-url> ~/skills/ios-sim-test
+   git clone https://github.com/AaronFromTroy/iOS-test-and-verify ~/skills/ios-sim-test
    ```
 
-2. Open your Claude Code settings file:
-   ```bash
-   # Claude Code global settings
-   open ~/.claude/settings.json
-   ```
-   If the file doesn't exist yet, create it.
-
-3. Add the skill under the `skills` key, pointing to the local path:
+2. Open your Claude Code settings file (`~/.claude/settings.json`) and add:
    ```json
    {
      "skills": [
        {
-         "path": "/Users/yourname/skills/ios-sim-test"
+         "path": "/Users/yourname/skills/ios-sim-test/ios-sim-test"
        }
      ]
    }
    ```
 
-4. Restart Claude Code (or reload the window). The skill is now active.
+3. Restart Claude Code. The skill is now active.
 
-### Option 2: Install directly in your project
+### Option 3: Install directly in your project
 
 If you only want the skill available in a specific project:
 
 1. Copy or symlink this directory into your project's `.claude/skills/` folder:
    ```bash
    mkdir -p /path/to/your/project/.claude/skills
-   cp -r ~/skills/ios-sim-test /path/to/your/project/.claude/skills/
+   cp -r ~/skills/ios-sim-test/ios-sim-test /path/to/your/project/.claude/skills/
    ```
 
 2. Claude Code will pick it up automatically when you open that project.

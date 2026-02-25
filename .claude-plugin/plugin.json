@@ -1,0 +1,9 @@
+{
+  "name": "ios-test-and-verify",
+  "version": "1.0.0",
+  "description": "Build, run, navigate, screenshot, and visually verify iOS apps on the Simulator",
+  "author": "AaronFromTroy",
+  "repository": "https://github.com/AaronFromTroy/iOS-test-and-verify",
+  "keywords": ["ios", "simulator", "xcode", "react-native", "flutter", "testing"],
+  "skills": "./"
+}
